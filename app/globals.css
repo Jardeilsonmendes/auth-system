@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal: #00c9c8;
+  --teal-dark: #007f7e;
+  --teal-glow: rgba(0, 201, 200, 0.35);
+  --bg: #0a0d12;
+  --card-bg: #0d1117;
+  --text: #e8f4f4;
+  --input-border: rgba(0, 201, 200, 0.4);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+}
+
+.shake { animation: shake 0.5s ease; }
